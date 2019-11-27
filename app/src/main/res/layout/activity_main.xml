@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:text="DBMS"
         android:textSize="24sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/editText5"
+        app:layout_constraintBaseline_toBaselineOf="@+id/dbmsEditTxt"
         app:layout_constraintEnd_toEndOf="@+id/textView5"
         app:layout_constraintHorizontal_bias="0.213"
         app:layout_constraintStart_toStartOf="@+id/textView5"
@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:text="Java"
         android:textSize="24sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/editText3"
+        app:layout_constraintBaseline_toBaselineOf="@+id/javaEditTxt"
         app:layout_constraintEnd_toEndOf="@+id/textView2"
         app:layout_constraintHorizontal_bias="0.213"
         app:layout_constraintStart_toStartOf="@+id/textView2"
@@ -36,7 +36,7 @@
         android:layout_height="wrap_content"
         android:text="iOS"
         android:textSize="24sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/editText2"
+        app:layout_constraintBaseline_toBaselineOf="@+id/iosEditTxt"
         app:layout_constraintEnd_toEndOf="@+id/textView"
         app:layout_constraintHorizontal_bias="0.213"
         app:layout_constraintStart_toStartOf="@+id/textView"
@@ -48,7 +48,7 @@
         android:layout_height="wrap_content"
         android:text="Android"
         android:textSize="24sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/editText4"
+        app:layout_constraintBaseline_toBaselineOf="@+id/androidEditTxt"
         app:layout_constraintEnd_toEndOf="@+id/textView3"
         app:layout_constraintHorizontal_bias="0.213"
         app:layout_constraintStart_toStartOf="@+id/textView3"
@@ -60,14 +60,14 @@
         android:layout_height="wrap_content"
         android:text="Swift"
         android:textSize="24sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/editText"
+        app:layout_constraintBaseline_toBaselineOf="@+id/swiftEditTxt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.167"
         app:layout_constraintStart_toStartOf="parent"
         tools:text="Swift" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/swiftEditTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
@@ -79,52 +79,52 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/iosEditTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:ems="10"
         android:hint="Marks Of iOS"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="@+id/editText"
-        app:layout_constraintStart_toStartOf="@+id/editText"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintEnd_toEndOf="@+id/swiftEditTxt"
+        app:layout_constraintStart_toStartOf="@+id/swiftEditTxt"
+        app:layout_constraintTop_toBottomOf="@+id/swiftEditTxt" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/javaEditTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:ems="10"
         android:hint="Marks Of Java"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="@+id/editText2"
-        app:layout_constraintStart_toStartOf="@+id/editText2"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintEnd_toEndOf="@+id/iosEditTxt"
+        app:layout_constraintStart_toStartOf="@+id/iosEditTxt"
+        app:layout_constraintTop_toBottomOf="@+id/iosEditTxt" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/androidEditTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:ems="10"
         android:hint="Marks Of Android"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="@+id/editText3"
-        app:layout_constraintStart_toStartOf="@+id/editText3"
-        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+        app:layout_constraintEnd_toEndOf="@+id/javaEditTxt"
+        app:layout_constraintStart_toStartOf="@+id/javaEditTxt"
+        app:layout_constraintTop_toBottomOf="@+id/javaEditTxt" />
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/dbmsEditTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:ems="10"
         android:hint="Marks Of DBMS"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="@+id/editText4"
-        app:layout_constraintStart_toStartOf="@+id/editText4"
-        app:layout_constraintTop_toBottomOf="@+id/editText4" />
+        app:layout_constraintEnd_toEndOf="@+id/androidEditTxt"
+        app:layout_constraintStart_toStartOf="@+id/androidEditTxt"
+        app:layout_constraintTop_toBottomOf="@+id/androidEditTxt" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -134,21 +134,16 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText5" >
+        app:layout_constraintTop_toBottomOf="@+id/dbmsEditTxt" >
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/calculateBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="16dp"
             android:layout_weight="1"
-            android:text="Button" />
-
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Button" />
+            android:text="Calculate"
+            tools:text="Calculate" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
