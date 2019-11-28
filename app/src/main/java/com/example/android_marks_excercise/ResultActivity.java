@@ -24,9 +24,7 @@ public class ResultActivity extends AppCompatActivity {
         dbmsMarks=findViewById(R.id.mDbmsView);
         swiftMarks=findViewById(R.id.mSwiftView);
         showres=findViewById(R.id.calculationShow);
-
-
-        //Marks m = (Marks) getIntent().getSerializableExtra("marks");
+        
     m = (Marks) getIntent().getSerializableExtra("marks");
 
     iosMarks.setText("iOS : "+String.valueOf(m.getmIos()));
