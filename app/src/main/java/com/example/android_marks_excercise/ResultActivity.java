@@ -7,7 +7,7 @@ import android.widget.TextView;
 
 public class ResultActivity extends AppCompatActivity {
 
-    Marks marks;
+    Marks marks=new Marks();
     TextView iosMarks,androidMarks,javaMarks,dbmsMarks,swiftMarks;
 
     @Override
@@ -21,11 +21,27 @@ public class ResultActivity extends AppCompatActivity {
         dbmsMarks=findViewById(R.id.mDbmsView);
         swiftMarks=findViewById(R.id.mSwiftView);
 
-        iosMarks.setText(marks.getmIos());
-        androidMarks.setText(marks.getmAndroid());
-        javaMarks.setText(marks.getmJava());
-        dbmsMarks.setText(marks.getmDBMS());
-        swiftMarks.setText(marks.getmSwift());
+
+
+        Marks m = (Marks) getIntent().getSerializableExtra("marks");
+
+        Bundle mBundle=getIntent().getExtras();
+        String mark=mBundle.getString("marks");
+
+
+        System.out.println("Hello :"+m.getmIos());
+    iosMarks.setText(String.valueOf(m.getmIos()));
+//    androidMarks.setText(m.getmAndroid());
+//    javaMarks.setText(m.getmJava());
+//    dbmsMarks.setText(m.getmDBMS());
+//    swiftMarks.setText(m.getmSwift());
+
+      //  iosMarks.setText(marks.getmIos());
+//        androidMarks.setText(marks.getmAndroid());
+//        javaMarks.setText(marks.getmJava());
+//        dbmsMarks.setText(marks.getmDBMS());
+//        swiftMarks.setText(marks.getmSwift());
+
 
     }
 }

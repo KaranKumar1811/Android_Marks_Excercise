@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import java.io.Serializable;
+
 public class MainActivity extends AppCompatActivity {
 
     Marks m;
@@ -26,16 +28,22 @@ public class MainActivity extends AppCompatActivity {
         dbms=findViewById(R.id.dbmsEditTxt);
         cal=findViewById(R.id.calculateBtn);
 
-       cal.setOnClickListener(new View.OnClickListener() {
+
+
+        cal.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View view)
            {
                Intent i = new Intent(MainActivity.this,ResultActivity.class);
+               m = new Marks();
+
                m.setmAndroid(Integer.parseInt(android.getText().toString()));
                m.setmDBMS(Integer.parseInt(dbms.getText().toString()));
                m.setmIos(Integer.parseInt(ios.getText().toString()));
                m.setmJava(Integer.parseInt(java.getText().toString()));
                m.setmSwift(Integer.parseInt(swift.getText().toString()));
+
+               i.putExtra("marks", m);
 
                startActivity(i);
 

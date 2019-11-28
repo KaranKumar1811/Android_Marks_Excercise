@@ -1,6 +1,8 @@
 package com.example.android_marks_excercise;
 
-public class Marks
+import java.io.Serializable;
+
+public class Marks implements Serializable
 {
  int mIos,mAndroid,mJava,mDBMS,mSwift;
 
@@ -23,6 +25,7 @@ public class Marks
     public void setmSwift(int mSwift) {
         this.mSwift = mSwift;
     }
+
 
     public int getmIos() {
         return mIos;
