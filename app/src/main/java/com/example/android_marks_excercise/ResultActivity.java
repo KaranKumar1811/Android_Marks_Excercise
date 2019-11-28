@@ -25,22 +25,12 @@ public class ResultActivity extends AppCompatActivity {
 
         Marks m = (Marks) getIntent().getSerializableExtra("marks");
 
-        Bundle mBundle=getIntent().getExtras();
-        String mark=mBundle.getString("marks");
 
-
-        System.out.println("Hello :"+m.getmIos());
-    iosMarks.setText(String.valueOf(m.getmIos()));
-//    androidMarks.setText(m.getmAndroid());
-//    javaMarks.setText(m.getmJava());
-//    dbmsMarks.setText(m.getmDBMS());
-//    swiftMarks.setText(m.getmSwift());
-
-      //  iosMarks.setText(marks.getmIos());
-//        androidMarks.setText(marks.getmAndroid());
-//        javaMarks.setText(marks.getmJava());
-//        dbmsMarks.setText(marks.getmDBMS());
-//        swiftMarks.setText(marks.getmSwift());
+    iosMarks.setText("iOS : "+String.valueOf(m.getmIos()));
+    androidMarks.setText("Android : "+String.valueOf(m.getmAndroid()));
+    javaMarks.setText(String.valueOf("Java : "+m.getmJava()));
+    swiftMarks.setText(String.valueOf("Swift : "+m.getmSwift()));
+    dbmsMarks.setText(String.valueOf("DBMS : "+m.getmDBMS()));
 
 
     }
